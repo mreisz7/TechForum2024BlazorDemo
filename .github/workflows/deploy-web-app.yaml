@@ -29,6 +29,9 @@ jobs:
 
     - name: Copy wwwroot to docs
       run: cp -r out/wwwroot docs
+    
+    - name: Remove the out folder
+      run: rm -rf out
 
     - name: Commit changes
       run: |
