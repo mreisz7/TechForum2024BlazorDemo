@@ -1,0 +1,23 @@
+﻿<CascadingValue Value=@this>
+    @ChildContent
+</CascadingValue>
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; } = null;
+
+    private int currentCount = 0;
+
+    public int CurrentCount
+    {
+        get => currentCount;
+        set
+        {
+            if (currentCount != value)
+            {
+                currentCount = value;
+                StateHasChanged();
+            }
+        }
+    }
+}
