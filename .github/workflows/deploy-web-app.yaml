@@ -25,7 +25,10 @@ jobs:
       run: dotnet build src/TechForum2024BlazorDemo/TechForum2024BlazorDemo.csproj --configuration Release
 
     - name: Publish
-      run: dotnet publish src/TechForum2024BlazorDemo/TechForum2024BlazorDemo.csproj --configuration Release --output docs
+      run: dotnet publish src/TechForum2024BlazorDemo/TechForum2024BlazorDemo.csproj --configuration Release --output out
+
+    - name: Copy wwwroot to docs
+      run: cp -r out/wwwroot docs
 
     - name: Commit changes
       run: |
