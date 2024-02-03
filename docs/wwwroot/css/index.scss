@@ -1,0 +1,126 @@
+html,
+body,
+#app {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+}
+
+.content-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #000;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem;
+  max-width: 55rem;
+  background-color: #fff;
+
+  p {
+    width: 100%;
+  }
+}
+
+.icon-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container img {
+  height: 100px;
+  margin: 1rem;
+}
+
+/* Header Component Styling */
+#navigation-header {
+  background-color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #111;
+
+  img {
+    height: 50px;
+    margin: 1rem;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 2rem;
+
+      .active {
+        border-bottom: 5px solid #1266ff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #111;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+/* Counter Component Styling */
+.counter-component {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+
+  .counter-button {
+    height: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #1266ff;
+    border: none;
+    outline: 1px solid #1266ff;
+    color: #fff;
+    font-size: 4.2rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+
+    &:active {
+      background-color: #175bd8;
+      outline: none;
+    }
+  }
+
+  .counter-value {
+    font-size: 7rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 0.25rem 1rem;
+    background-color: #eee;
+    min-width: 10rem;
+    text-align: center;
+  }
+}

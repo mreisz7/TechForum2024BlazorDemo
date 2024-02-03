@@ -1,0 +1,13 @@
+{
+    "SourceFolder": "wwwroot/css",
+    "TargetFolder": "wwwroot/css",
+    "Arguments": "--style=compressed --no-source-map",
+    "GenerateScopedCss": true,
+    "ScopedCssFolders": ["Components", "Pages", "Layouts"],
+    "IncludePaths": [ "wwwroot/css" ],
+    "Configurations": {
+        "Debug": {
+            "Arguments": "--style=expanded --no-source-map"
+        }
+    }
+}
