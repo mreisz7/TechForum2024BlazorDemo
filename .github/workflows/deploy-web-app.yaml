@@ -30,6 +30,9 @@ jobs:
     - name: Copy wwwroot to docs
       run: cp -r out/wwwroot docs
     
+    - name: Set BasePath
+      run: sed -i 's/base href="\/"/base href="\/TechForum2024BlazorDemo\/"/g' docs/index.html
+    
     - name: Remove the out folder
       run: rm -rf out
 
