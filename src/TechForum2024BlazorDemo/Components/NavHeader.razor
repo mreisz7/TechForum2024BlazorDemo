@@ -1,0 +1,21 @@
+﻿<nav id="navigation-header">
+    <img src="/img/millimanlogo.png" alt="Milliman Logo" />
+    <ul>
+        <li>
+            <NavLink ActiveClass="active" Match="NavLinkMatch.All" Href="/">
+                Home
+            </NavLink>
+        </li>
+        <li>
+            <NavLink ActiveClass="active" Match="NavLinkMatch.All" Href="/counter">
+                Counter (@AppState.CurrentCount)
+            </NavLink>
+        </li>
+    </ul>
+    <img src="/img/react-logo.png" alt="React Logo" />
+</nav>
+
+@code {
+    [CascadingParameter]
+    private AppState AppState { get; set; } = new();
+}

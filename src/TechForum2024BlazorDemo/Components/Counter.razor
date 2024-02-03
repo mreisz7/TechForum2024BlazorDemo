@@ -1,0 +1,30 @@
+﻿<div class="counter-component">
+    <button class="counter-button"
+            @onclick=@DecrementCount   
+    >
+        <i class="fa-solid fa-minus"/>
+    </button>
+    <h1 class="counter-value">
+        @AppState.CurrentCount
+    </h1>
+    <button class="counter-button"
+            @onclick=@IncrementCount
+    >
+        <i class="fa-solid fa-plus"/>
+    </button>
+</div>
+
+@code {
+    [CascadingParameter]
+    private AppState AppState { get; set; } = new();
+
+    private void DecrementCount()
+    {
+        AppState.CurrentCount--;
+    }
+
+    private void IncrementCount()
+    {
+        AppState.CurrentCount++;
+    }
+}
