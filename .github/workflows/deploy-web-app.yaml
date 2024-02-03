@@ -36,9 +36,6 @@ jobs:
     - name: Remove the out folder
       run: rm -rf out
 
-    - name: Disable Jekyll to enable Blazor WebAssembly
-      run: touch docs/.nojekyll
-
     - name: Commit changes
       run: |
         git config --local user.email "action@github.com"
