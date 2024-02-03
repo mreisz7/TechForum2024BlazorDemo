@@ -485,3 +485,6 @@ $RECYCLE.BIN/
 
 # ContextKeeper files
 *.ck
+
+# compiled css files
+*.css*
