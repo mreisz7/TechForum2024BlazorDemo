@@ -1,0 +1,34 @@
+@inherits TestContext
+
+@code {
+    [Fact]
+    public void NavHeaderComponentRendersCorrectly()
+    {
+        // Arrange
+        var cut = Render<NavHeader>(
+            @<AppState>
+                <NavHeader />
+            </AppState>
+        );
+
+        // Assert that the counter starts at zero
+        cut.MarkupMatches(
+            @<nav id="navigation-header">
+                <img src="img/millimanlogo.png" alt="Milliman Logo" />
+                <ul>
+                    <li>
+                        <a href="" class="active" aria-current="page">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="counter">
+                            Counter (0)
+                        </a>
+                    </li>
+                </ul>
+                <img src="img/blazor-logo.png" alt="React Logo" />
+            </nav>
+        );
+    }
+}
