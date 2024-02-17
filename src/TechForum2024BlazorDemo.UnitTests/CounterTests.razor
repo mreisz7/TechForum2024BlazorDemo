@@ -1,4 +1,71 @@
 @inherits TestContext
 
 @code {
+	[Fact]
+	public void CounterComponenetRendersCorrectly()
+	{
+		// Arrange
+		var cut = Render<Counter>(
+			@<AppState>
+				<Counter />
+			</AppState>
+		);
+
+		// Assert that content of the paragraph shows counter at zero
+		cut.MarkupMatches(
+			@<div class="counter-component">
+				<button class="counter-button decrement">
+					<i class="fa-solid fa-minus"/>
+				</button>
+				<h1 class="counter-value">
+					0
+				</h1>
+				<button class="counter-button increment">
+					<i class="fa-solid fa-plus"/>
+				</button>
+			</div>
+		);
+	}
+
+    [Fact]
+	public void ClickingIncrementButtonIncrementsCounter()
+	{
+		// Arrange
+		var cut = Render<Counter>(
+			@<AppState>
+				<Counter />
+			</AppState>
+		);
+
+		// Act - click button to increment counter
+		cut.Find("button.increment").Click();
+
+		// Assert that the counter was incremented
+		cut.Find(".counter-value").MarkupMatches(
+			@<h1 class="counter-value">
+				1
+			</h1>
+		);
+	}
+
+    [Fact]
+	public void ClickingDecrementButtonDecrementsCounter()
+	{
+		// Arrange
+		var cut = Render<Counter>(
+			@<AppState>
+				<Counter />
+			</AppState>
+		);
+
+		// Act - click button to increment counter
+		cut.Find("button.decrement").Click();
+
+		// Assert that the counter was incremented
+		cut.Find(".counter-value").MarkupMatches(
+			@<h1 class="counter-value">
+				-1
+			</h1>
+		);
+	}
 }
