@@ -1,0 +1,38 @@
+name: CI - TechForum2024BlazorDemo
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ci.yaml'
+      - 'src/**'
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src
+    steps:
+    - name: Checkout pushed branch
+      uses: actions/checkout@v3
+
+    - name: Setup .NET environment
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Publish Projects
+      run: dotnet publish --no-restore /p:TreatWarningsAsErrors=true --configuration Debug
+
+    - name: Run Unit Tests
+      run: dotnet test TechForum2024BlazorDemo --no-build --verbosity normal
