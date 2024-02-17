@@ -1,15 +1,15 @@
 {
   "mainAssemblyName": "TechForum2024BlazorDemo",
   "resources": {
-    "hash": "sha256-cUFvZhKhNJXHbP3Vj5saRwB1OGg1EmMFRoQQioeFv1M=",
+    "hash": "sha256-rHu88DyEfCVxraDeHG+nomWEe7HNNdSO6oiuS0poLr8=",
     "jsModuleNative": {
-      "dotnet.native.8.0.1.ahpp78valh.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
+      "dotnet.native.8.0.2.jgt5nhn140.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.1.9o34sz4099.js": "sha256-HZOoaGpz9ekMa/oSmeApSKp3DXNdVUq2UBqsTIIiN8A="
+      "dotnet.runtime.8.0.2.8djt6nqnbz.js": "sha256-54KSaoOArNfygQbV+r4B5y3ys53v2tnvFIyZcZiUmi0="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-dqpunZywlYy86b4O6ZjONasmG+4FH0P17FZ0OIf/lIg="
+      "dotnet.native.wasm": "sha256-C2P+OTYZAJlmqo6rc4heqwvIVVsXIF8MAxC6WRe96Eg="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -33,25 +33,25 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-6187ynEahDlSLMBvD4vAmiLpZ3clRb5xu6rM7O8AxNo=",
       "Microsoft.JSInterop.wasm": "sha256-y9e5FjTO/gq0d6pvl/cYf7uT232Y/Dw7ZS0YNZGBv/M=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-aCgxiIU+arbpOkgLngl1hBQLocrFL2/t1zUJV8HXOzI=",
-      "System.Collections.Concurrent.wasm": "sha256-0j1YW/96ftT2C89MHcCTY0SmqlOeLhlAcBjNqgQ0A90=",
-      "System.Collections.wasm": "sha256-du+l9M3MDQD8juAMXZIuKSoUsXcDOfDrj75FcHRfdH0=",
-      "System.ComponentModel.wasm": "sha256-/6Kik6mC6ZHx8OXft116HbGv8VWDCF3oge/a6pf8jB8=",
-      "System.Console.wasm": "sha256-kb6thPppTzhq1kKHgp/f33KhVp+0qdZ+xDrYMeQTM7g=",
-      "System.Diagnostics.Debug.wasm": "sha256-2ZCyt/pyQFh9iRxl24BfF4vAeBvntQGYeRgphqbVSvQ=",
-      "System.Linq.wasm": "sha256-nypze7Qho4b9W+bkgJ+KV352MjFT2uKplyGDA6iU8Ak=",
-      "System.Memory.wasm": "sha256-knjbGOCBheL9B4otKa8RL1ub1dK0cjg0Yp5Obly7bqU=",
-      "System.Net.Http.wasm": "sha256-PMMfa4WyBXuKsYminiQ2IYCZRUeLEPBYiL+2z/4xAq4=",
-      "System.Net.Primitives.wasm": "sha256-uwRJ8XAjHdWcBuykD7aQ4oA2COoqGWX59ZQYtxqOS8U=",
-      "System.Private.CoreLib.wasm": "sha256-HqjijJkNyIRX+D8zjyA3GGUKxBwy6TO/RZKJlZ948aA=",
-      "System.Private.Uri.wasm": "sha256-jj/hhbT4udfK7GNUIuvm7tP2oTvg+gtQawFcLyzQh0c=",
-      "System.Resources.ResourceManager.wasm": "sha256-UKmYumvjXMzr60AneQlcdZkb9Rv5CxYchFMtUPDmn74=",
-      "System.Runtime.InteropServices.JavaScript.wasm": "sha256-RlJHXOPlWUlCQa08xhe0wthBRBE4nBiAsyC88n/fChE=",
-      "System.Runtime.wasm": "sha256-1tXLtKGFl5ymJmLWjfhhaM5Sl/RmrdvNE9o1K0+G7qw=",
-      "System.Text.Encodings.Web.wasm": "sha256-+xy+tOrpZQfQay41WvWhFxGHmHiYCwxIZC0u0YeG8MY=",
-      "System.Text.Json.wasm": "sha256-1UMR1AS5xQplFWBFPk0uLBYzUKN1BHQqRuDsYxxquDo=",
-      "System.Text.RegularExpressions.wasm": "sha256-gBOmDgKZBuDoGsHbhJq/ngBU9uslj8K/+ZuZekYrq54=",
-      "System.Threading.Tasks.wasm": "sha256-yx0cigYbIgNR77SQM8zo3/XO/8cNcFiVSwqKIPVHgDY=",
-      "TechForum2024BlazorDemo.wasm": "sha256-HU5banqhzcvedJ1L4DfjYIgyO99pEd1lQ7tcTyr5uA0="
+      "System.Collections.Concurrent.wasm": "sha256-DEZ59fGbj2NqpZbDf9KV0hzXZkN0+vJaLNPPONQTjLo=",
+      "System.Collections.wasm": "sha256-le3Hos20YHqMbju0NlRous5zMDdzqVrcRrbQ1gFpssU=",
+      "System.ComponentModel.wasm": "sha256-qwurUoDSjnjNxAivtUxZqGvkOgARzX9ETuhBPrMx5Xo=",
+      "System.Console.wasm": "sha256-hcaSe3dddvUYzyPNpqoGVuiON/PLZocvLhbJ0wtpre8=",
+      "System.Diagnostics.Debug.wasm": "sha256-u+bLgDsooAf4A43CncBFb6QgZAvOTyU3MAZoPPB1xgg=",
+      "System.Linq.wasm": "sha256-uOn2NQpv/BE0J7ag0lhIKWsUcxg3U4uEeZeXx+eIKrk=",
+      "System.Memory.wasm": "sha256-is0fLYQZE9huTBti4rGQQebqsfCdCmdu0IQTpRGE5VQ=",
+      "System.Net.Http.wasm": "sha256-6m19mkuheow7Jv1+bmjfwJffNfxGHJrDu+eWAmXGKas=",
+      "System.Net.Primitives.wasm": "sha256-sm6hDRoze7+24GQmGGL6eyXuz9nBcj3qAI8bOqlSVnc=",
+      "System.Private.CoreLib.wasm": "sha256-QKXpCKBMaMmLlTKqX/ZvgdAYACS0oX+tnEJgjavVz+M=",
+      "System.Private.Uri.wasm": "sha256-OV+QIxwhJgwMSWxb+jmaL2jKmv3BRPf9MABpFXErZak=",
+      "System.Resources.ResourceManager.wasm": "sha256-fWLcsoymOrGaVL77FvTyCwAqv4F8q4jsKTmsa50KsnM=",
+      "System.Runtime.InteropServices.JavaScript.wasm": "sha256-V1xvZgzz6Gy7iYFPviaHRPOvygBTDwW/AT5/QUajEOM=",
+      "System.Runtime.wasm": "sha256-oGZNXeTym5i7AusySi3kbjQhLJFVqX+2JQesoGSrTEc=",
+      "System.Text.Encodings.Web.wasm": "sha256-NnePSWCgIId8nOPCgziTKhDyG6uCBs+3W6fazrWLoUA=",
+      "System.Text.Json.wasm": "sha256-GR3D89PGASVanrViLBaCIgEJEFS4z7o+W7m7kECsfC0=",
+      "System.Text.RegularExpressions.wasm": "sha256-W20q/uEUAv0A+F6irUkY0pCZJo76wNuWpz3XgcLFB2M=",
+      "System.Threading.Tasks.wasm": "sha256-1o+8ftEDB5GgWxFUA8ZcntIr2PiKqAZf+GZA+GE/DMI=",
+      "TechForum2024BlazorDemo.wasm": "sha256-cPmalOmW1W3TinrMFbFs2J87RzNH+qSsbyFZmmkGrJs="
     }
   },
   "cacheBootResources": true,
