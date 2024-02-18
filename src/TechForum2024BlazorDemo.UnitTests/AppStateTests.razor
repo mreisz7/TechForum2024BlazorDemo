@@ -1,0 +1,32 @@
+@inherits TestContext
+
+@code {
+    [Fact]
+    public void AppStateComponentCurrentCountStartsAtZero()
+    {
+        // Arrange
+        var cut = Render<AppState>(
+            @<AppState />
+        );
+
+        // Assert that the counter starts at 0
+        Assert.Equal(0, cut.Instance.CurrentCount);
+    }
+
+    [Theory]
+    [InlineData(1)]
+    [InlineData(-1)]
+    public void AppStateComponentUpdatesCurrentCountCorrectly(int expectedValue)
+    {
+        // Arrange
+        var cut = Render<AppState>(
+            @<AppState />
+        );
+
+        // Act
+        cut.InvokeAsync(() => cut.Instance.CurrentCount = expectedValue);
+
+        // Assert that the counter equals the expected value
+        Assert.Equal(expectedValue, cut.Instance.CurrentCount);
+    }
+}
