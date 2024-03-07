@@ -99,14 +99,11 @@ main {
     background-color: #1266ff;
     border: none;
     outline: 1px solid #1266ff;
-    color: #fff;
-    font-size: 4.2rem;
     cursor: pointer;
     margin: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 0;
 
     &:active {
       background-color: #175bd8;
