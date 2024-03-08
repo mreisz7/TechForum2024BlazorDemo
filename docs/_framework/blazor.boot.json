@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TechForum2024BlazorDemo",
   "resources": {
-    "hash": "sha256-DjS+FjrKv/6ZGBtolD7ZMOLpHXmiPI3pfizLzvDdtRI=",
+    "hash": "sha256-69em9j7Ab92FHnV+X0v5uMhEv2oXln9BNPGjtfa/2+8=",
     "jsModuleNative": {
       "dotnet.native.8.0.2.jgt5nhn140.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
     },
@@ -51,7 +51,7 @@
       "System.Text.Json.wasm": "sha256-GR3D89PGASVanrViLBaCIgEJEFS4z7o+W7m7kECsfC0=",
       "System.Text.RegularExpressions.wasm": "sha256-W20q/uEUAv0A+F6irUkY0pCZJo76wNuWpz3XgcLFB2M=",
       "System.Threading.Tasks.wasm": "sha256-1o+8ftEDB5GgWxFUA8ZcntIr2PiKqAZf+GZA+GE/DMI=",
-      "TechForum2024BlazorDemo.wasm": "sha256-a3/EsyZW4XlTb48MBQBQzKn6viPFO4aHGVZDIU1YJXo="
+      "TechForum2024BlazorDemo.wasm": "sha256-Pc75eHf6n5xnkj8pKTrh2AtQlNG24NedDLMoN9AZEbQ="
     }
   },
   "cacheBootResources": true,
